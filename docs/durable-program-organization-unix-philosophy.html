@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Durable program organization: UNIX Philosophy</title>
+<meta name="identifier" content="g43f002e3c36ad4fca385ff871d467849"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<p>UNIX is one of the most long-standing durable frameworks for using computers. Most academic software is designed to run on unix machines. Most data-analysis servers run the free version of UNIX, linux. Mac computers are build around a UNIX background. UNIX tools have stood the test of time.</p>
+<p>One thing that has contributed to this durability is the "UNIX Design Philosophy."</p>
+<p>In general, these guidelines are good things to think about when writing your own code. Although the UNIX design philosophy was written for programs, it can just as well be applied to scripts, functions, and projects as well. If you adhere to these rules, your code has a chance to stand the test of time. :-)</p>
+<p> </p>
+<p>The primary goal is to: <em>Do one thing and do it well.</em></p>
+<p>KISS Principle<span> applies to programming: "Keep it Simple, Stupid."</span></p>
+<p> </p>
+<p>UNIX Philosophy (<a href="http://wiki.c2.com/?UnixDesignPhilosophy">http://wiki.c2.com/?UnixDesignPhilosophy</a>)</p>
+<ol>
+<li><i>Small is beautiful.</i></li>
+<li><i>Make each program do one thing well.</i></li>
+<li><i>Build a prototype as soon as possible.</i></li>
+<li><i>Choose portability over efficiency.</i></li>
+<li><i>Store data in flat text files (such as a .csv).</i></li>
+<li><i>Use software leverage to your advantage.</i></li>
+<li><i>Use<a title="Shell script" href="https://en.m.wikipedia.org/wiki/Shell_script"> scripts</a> to increase leverage and portability.</i></li>
+<li><i>Avoid captive user interfaces.</i></li>
+<li><i>Make every program a <a title="Filter (software)" href="https://en.m.wikipedia.org/wiki/Filter_(software)#Unix">filter</a>.</i></li>
+</ol>
+<p><i></i></p>
+<p> </p>
+<p><span>The major tenets</span></p>
+<ol>
+<li>Small is beautiful. Small things have tremendous advantages over their larger counterparts. Among these is the ability to combine with other small things in unique and useful ways.</li>
+<li>Make each program do one thing well. By focusing on a single task, a program can eliminate much extraneous code that often results in excess overhead, unnecessary complexity, and a lack of flexibility.</li>
+<li>Build a prototype as soon as possible. Most users looking for a new piece of software won't know what they really want until they see it, so requirements documents are often misleading about the users' real needs. The Unix design philosophy makes prototyping a central part of the methodology: give the user something, anything, up-front to criticise, and work from there. </li>
+<li>Choose portability over efficiency. If today's hardware just about runs a program with just about adequate efficiency, tomorrow's will run it with power to spare. So the developer's task is to make sure his program will run on that new hardware with minimal effort. </li>
+<li>Store data and configuration info in flat ASCII files. Valuable data will generally out-live any one program, machine, programming language or use. Data is only useful as long as it's being used, and flat files help ensure that data is usable for the longest possible time. For complex data structures where flat text really isn't appropriate, use a structured text format like XML instead: you can always strip-out the mark-up to get at the raw data.</li>
+<li>Use software leverage to your advantage. Many programmers have only a superficial understanding of the importance of re-usable code modules. Code re-use helps one take advantage of software leverage, a powerful concept that some Unix developers use to create numerous applications in a comparatively short time.</li>
+<li>Use shell scripts to increase leverage and portability. Scripts generate huge leverage - every line of script can invoke several "proper" programs each with several thousand lines of code. A programmer who can't re-use other programs is condemned to re-write them. </li>
+<li>Avoid captive user interfaces. A program which prevents to user using any other commands for the duration "captures" the user and prevents him from taking advantage of other commands. A program should be usable in many modalities to maximise its usefulness.</li>
+<li>Make every program a filter. The fundamental nature of all software programs is that they can only modify data, never create it. Therefore they should be written to function as filters since they are filters.</li>
+</ol>
+<p><span>The minor tenets</span></p>
+<ol>
+<li>Allow the user to tailor the environment. No single decision will suit all users - so don't force one upon them. The more tailorable an environment is, the more users can match it to their needs and the more they'll like it. </li>
+<li>Make operating system kernels small and lightweight. Despite the never-ending push for new features, Unix developers prefer to keep the most central part of the operating system small. They don't always succeed at this, but this is their goal.</li>
+<li>Use lower case and keep it short. Using the lower case is a tradition in the Unix environment that has persisted long after the reason for doing so (that it's easier to read text with descenders on a teletype) disappeared.</li>
+<li>Save trees. Data committed to paper is essentially dead. There are good reasons for keeping all text on-line and using powerful tools to manipulate it. </li>
+<li>Silence is golden. A silent command is often more usable, providing the function asked for and nothing more. You can always provide wrappers for people who prefer a more conversational tone. (See <a href="http://wiki.c2.com/?RuleOfSilence">RuleOfSilence</a>, compare with <a href="http://wiki.c2.com/?SilentFailureNoisySuccess">SilentFailureNoisySuccess</a>)</li>
+<li>Think parallel. Most tasks are composed of sub-tasks which may be attacked in parallel. This also applies to user interactions. Parallelism can save a great deal of time and frustration.</li>
+<li>The sum of the parts is greater than the whole. A large application built from a collection of smaller programs is more flexible and hence more useful than a single large program. The same functional capability may exist in both solutions, but the collection-of-small-programs approach is the more forward-looking of the two.</li>
+<li>Look for the 90% solution. Doing 100% of anything is difficult. Doing only 90% is far more efficient and cost-effective. Handle the 90% and let the 10% fend for themselves - often they'll handle their own special requirements far better than you would anyway. (<a href="http://wiki.c2.com/?EightyTwentyRule">EightyTwentyRule</a>)</li>
+<li>Worse is better. That which is cheap but effective is far more likely to proliferate than that which is high quality and expensive. The PC-compatible world borrowed this idea and made quite a go of it....</li>
+<li>Think hierarchically. Hierarchies allow tasks and attributes to be applied uniformly across nested elements. This is a powerful idea that encourages decomposition and modularity. (Counterview: <a href="http://wiki.c2.com/?LimitsOfHierarchies">LimitsOfHierarchies</a>)</li>
+</ol>
+<p> </p>
+<p>For more on the unix philosophy see: https://www.amazon.com/exec/obidos/ISBN=1555581234/portlandpatternrA/</p>
+<p> </p>
+<p><i></i></p>
+<p><i></i></p>
+<p><i></i></p>
+</body>
+</html>

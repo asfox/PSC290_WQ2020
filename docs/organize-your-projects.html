@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Organize your projects!</title>
+<meta name="identifier" content="g02749a133164760e15e8967eb349c6ba"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<p>A consistent and well-organized structure allows effective collaboration with other people, as well as with your future self. Your analyses should be reproducible and your structure should enable that. As we learn how to organize, we often have files like, "project new" and "project new updated" and "project final" and "project final new". This is terrible practice, and can make it near impossible to go back and update your analyses after a few years. Trust me, I know. </p>
+<p>A projects starts from raw data that should never be edited; consider raw data immutable and only edit derived sources. </p>
+<p> </p>
+<h4>A short digression: naming and formatting</h4>
+<p><font size="-2">(Copied from: <a href="http://intermediate-and-advanced-software-carpentry.readthedocs.io/en/latest/structuring-python.html#a-short-digression-naming-and-formatting">Titus Brown</a>)</font></p>
+<p>You may have noticed that a lot of Python code looks pretty similar – this is because there’s an “official” style guide for Python, called <a class="reference external" href="http://www.python.org/dev/peps/pep-0008/">PEP 8</a>. It’s worth a quick skim, and an occasional deeper read for some sections.</p>
+<p>Here are a few tips that will make your code look internally consistent, if you don’t already have a coding style of your own:</p>
+<ul>
+<li>use four spaces (NOT a tab) for each indentation level;</li>
+<li>use lowercase, _-separated names for module and function names, e.g.<br>my_module;</li>
+<li>use CapsWord style to name classes, e.g. MySpecialClass;</li>
+<li>use ‘_’-prefixed names to indicate a “private” variable that should<br>not be used outside this module, , e.g. _some_private_variable;</li>
+</ul>
+<p> </p>
+<h4>Jupyter Notebooks</h4>
+<p>In this class, we've be using the jupyter notebook. This doesn't mean it's not important to keep organized! Notebooks, like all other things can quickly grow out of control. Ultimately, your success will rely on other people, and your future self, being able to read your own code. </p>
+<p>Here are some of my tips on how to make that easy.</p>
+<ul>
+<li>
+<em>Imports</em> should be at the top, in a cell that's separated from the rest of the code. </li>
+<li>
+<em>Hard-coded variables</em>, such as files or numbers, should be defined as variables in ALL CAPS, and separated from the code that uses them. </li>
+<li>
+<span><em>Don't repeat yourself</em>. </span>Minimize copy and pasted code. If you can avoid it, don't repeat yourself. </li>
+<li>
+<em>Use <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">markdown</a></em> to describe different steps (you can convert a cell to a markdown cell using "Cmd^m m").</li>
+</ul>
+<p> </p>
+<h4>Coding for Projects </h4>
+<p>As you move forward working on larger coding projects involved in your science, a single jupyter notebook will not be enough. Notebooks are wonderful for working through bits of code, and sharing projects, but the best way to organize your project probably isn't in a single notebook, stored in a single folder with your data. (That doesn't mean you can't still use notebooks; I use notebooks in larger projects all the time.)</p>
+<p>Here are two pages that give suggestions about how to organize projects. Both pages provide an overview of how and why to organize your data/project/etc. and provide Github-based ways to copy their structure. Please read through at least one of these. </p>
+<ul>
+<li>This example is a little intense, but well explained: <a href="https://drivendata.github.io/cookiecutter-data-science">https://drivendata.github.io/cookiecutter-data-science</a>
+</li>
+<li>This example is a little more sparse, but provides a nice and flexible way to organize projects, with an accompanying git. <a href="https://blog.godatadriven.com/how-to-start-a-data-science-project-in-python">https://blog.godatadriven.com/how-to-start-a-data-science-project-in-python</a>
+</li>
+</ul>
+<p> </p>
+<p>P.S. In some of my projects, I don't separate folders for "code" and "notebooks". It really depends on what I am doing. :-)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
